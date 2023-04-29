@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>it's me, Mufid</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid"><img src="./MyLogo.png" /></i>
+            <div class="logo-text">Mufid</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Activity</a></li>
+              <li><a href="#">Hobby</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="container">
+          <div class="hero-pi"><img src="./rMe.png" alt="" /></div>
+          <div class="hero-text">
+            <h5>
+              Assalamu'alaikum , <span>shall we introduce ourselves?</span>
+            </h5>
+            <h1>I'm Mufid</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+              itaque eveniet repellat recusandae tempore quae fugiat veniam amet
+              molestias nihil!
+            </p>
+            <div class="btn-group">
+              <a href="https://api.whatsapp.com/send/?phone=6282373696954&text&type=phone_number&app_absent=0" class="btn active">WhatsApp</a>
+              <a href="#" class="btn">CV</a>
+            </div>
+
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // show and hide havbar
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+
+      togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

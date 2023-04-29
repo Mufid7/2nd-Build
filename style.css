@@ -194,6 +194,15 @@ nav .navlinks li a{
   transform: rotate(360deg);
 }
 
+.navlinks li a:hover{
+  color: var(--text-color);
+  background-color: #007ced;
+  padding: 10%;
+  border-radius: 25%;
+  transition: 0.1s;
+  
+}
+
 @media(max-width:930px){
 
   nav .togglebtn{
@@ -261,6 +270,15 @@ nav .navlinks li a{
 
   .hero-text{
     padding: 40px 0px;
+  }
+
+  .navlinks li a:hover{
+    color: var(--text-color);
+    background-color: #007ced;
+    padding: 1%;
+    border-radius: 0;
+    transition: 0.1s;
+    
   }
 
 

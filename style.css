@@ -233,6 +233,7 @@ nav .navlinks li a{
   }
 
   nav .navlinks{
+    display: none;
     position: absolute;
     top: 110px;
     right: -100%;
@@ -257,6 +258,8 @@ nav .navlinks li a{
 
   nav .navlinks.open{
     right: 0;
+    display: block;
+    overflow: auto;
   }
 
 }
@@ -280,6 +283,4 @@ nav .navlinks li a{
     transition: 0.1s;
     
   }
-
-
 }

@@ -35,7 +35,7 @@
           <div class="hero-pi"><img src="./rMe.png" alt="" /></div>
           <div class="hero-text">
             <h5>
-              Assalamu'alaikum , <span>shall we introduce ourselves?</span>
+              Assalamu'alaikum , <span class="typing"></span>
             </h5>
             <h1>I'm Mufid</h1>
             <p>
@@ -58,6 +58,10 @@
       </div>
     </div>
 
+    <!-- buat teks ketik otomatis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js
+    "></script>
+
     <script>
       // show and hide havbar
       var togglebtn = document.querySelector(".togglebtn");
@@ -68,6 +72,14 @@
         this.classList.toggle("click");
         nav.classList.toggle("open");
       });
+
+
+      var typed = new Typed(".typing", {
+        strings :["Nice to meet you", "shall we introduce ourselves?"],
+        stySpeed : 70,
+        backSpeed: 60,
+        loop : true
+      })
     </script>
   </body>
 </html>

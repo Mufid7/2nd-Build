@@ -198,7 +198,7 @@ nav .navlinks li a{
   color: var(--text-color);
   background-color: #007ced;
   padding: 10%;
-  border-radius: 25%;
+  border-radius: 25px;
   transition: 0.1s;
   
 }

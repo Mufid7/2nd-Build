@@ -209,11 +209,15 @@ nav .navlinks li a {
 .gallery .gallery-title{
   font-weight: bold;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2vmax;
+  padding: 5px;
+  background: #007ced;
+  color: var(--text-color);
+  border-radius: 5px;
 }
 
 .gallery p{
-  font-size: 1.5vw;
+  font-size: 1.5vmax;
   text-align: center;
 }
 
@@ -232,7 +236,7 @@ nav .navlinks li a {
 
 .column img {
   vertical-align: middle;
-  width: 100%;
+  width: 99%;
   margin-top: 4px;
   border-radius: 5px;
 }

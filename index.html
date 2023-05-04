@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Personal Portfolio</title>
   </head>
   <body>
@@ -24,9 +27,9 @@
             </div>
             <ul class="navlinks">
               <li><a href="#">Profile</a></li>
-              <li><a href="#">Activity</a></li>
+              <li><a href="#activity">Activity</a></li>
               <li><a href="#">Hobby</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">About Me</a></li>
             </ul>
           </nav>
         </header>
@@ -34,9 +37,7 @@
         <div class="container">
           <div class="hero-pi"><img src="./rMe.png" alt="" /></div>
           <div class="hero-text">
-            <h5>
-              Assalamu'alaikum , <span class="typing"></span>
-            </h5>
+            <h5>Assalamu'alaikum , <span class="typing"></span></h5>
             <h1>I'm Mufid</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
@@ -44,7 +45,11 @@
               molestias nihil!
             </p>
             <div class="btn-group">
-              <a href="https://api.whatsapp.com/send/?phone=6282373696954&text&type=phone_number&app_absent=0" class="btn active">WhatsApp</a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=6282373696954&text&type=phone_number&app_absent=0"
+                class="btn active"
+                >WhatsApp</a
+              >
               <a href="#" class="btn">CV</a>
             </div>
 
@@ -54,6 +59,52 @@
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div id="activity" class="gallery-title">Gallery Design in my activity</div>
+      <p>explore your creativity</p>
+      <div class="row">
+        <div class="column">
+          <img src="./1_MySelf.png" alt="" />
+          <img
+            src="./Muhammad Mufid Ridho_Landing Page Web Design.png"
+            alt=""
+          />
+          <img src="./3_MySelf.png" alt="" />
+          <img src="./DI_1.png" alt="" />
+          <img src="./5_MySelf.png" alt="" />
+        </div>
+        <div class="column">
+          <img
+            src="./Muhammad Mufid Ridho_Landing Page Web Design.png"
+            alt=""
+          />
+          <img src="./3_MySelf.png" alt="" />
+          <img src="./1_MySelf.png" alt="" />
+          <img src="./5_MySelf.png" alt="" />
+          <img src="./DI_1.png" alt="" />
+        </div>
+        <div class="column">
+          <img src="./DI_1.png" alt="" />
+          <img src="./1_MySelf.png" alt="" />
+          <img src="./3_MySelf.png" alt="" />
+          <img
+            src="./Muhammad Mufid Ridho_Landing Page Web Design.png"
+            alt=""
+          />
+          <img src="./5_MySelf.png" alt="" />
+        </div>
+        <div class="column">
+          <img src="./5_MySelf.png" alt="" />
+          <img
+          src="./Muhammad Mufid Ridho_Landing Page Web Design.png"
+            alt=""
+          />
+          <img src="./3_MySelf.png" alt="" />
+          <img src="./1_MySelf.png" alt="" />
+          <img src="./DI_1.png" alt="" />
         </div>
       </div>
     </div>
@@ -68,18 +119,17 @@
       var nav = document.querySelector(".navlinks");
       var links = document.querySelector(".navlinks li");
 
-      togglebtn.addEventListener("click", function(){
+      togglebtn.addEventListener("click", function () {
         this.classList.toggle("click");
         nav.classList.toggle("open");
       });
 
-
       var typed = new Typed(".typing", {
-        strings :["Nice to meet you ,", "shall we introduce ourselves ?"],
-        typeSpeed : 35,
+        strings: ["Nice to meet you ", "shall we introduce ourselves ?" , "I'm a Web Designer"],
+        typeSpeed: 35,
         backSpeed: 30,
-        loop : true
-      })
+        loop: true,
+      });
     </script>
   </body>
 </html>

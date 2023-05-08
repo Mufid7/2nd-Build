@@ -193,7 +193,7 @@ nav .navlinks li a {
 .navlinks li a:hover {
   color: var(--text-color);
   background-color: #007ced;
-  padding: 10%;
+  padding: 10px;
   border-radius: 25px;
   transition: 0.1s;
 }
@@ -202,8 +202,9 @@ nav .navlinks li a {
   display: block;
   width: 100%;
   padding: 0 1%;
-  height: 100vh;
-  margin-top: 30px;
+  height: 100%;
+  padding: 10px ;
+  background-color: #222;
 }
 
 .gallery .gallery-title{
@@ -219,12 +220,14 @@ nav .navlinks li a {
 .gallery p{
   font-size: 1.5vmax;
   text-align: center;
+  margin: 10px 0 ;
+  color: var(--text-color);
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 04px;
+  padding: 4px;
 }
 
 .column {
@@ -240,6 +243,44 @@ nav .navlinks li a {
   margin-top: 4px;
   border-radius: 5px;
 }
+
+footer{
+  width: 95%;
+  height: 300px;
+  border: #222 1px solid;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.row-f{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+column-f{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 30%;
+  flex: 30%;
+  padding: 0 4px;
+}
+ .nav-f {
+  list-style-type: none;
+}
+
+ .nav-f li a {
+  color: black;
+  margin-right: 2.5rem;
+}
+
+.satu img{
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+}
+
 
 
 
@@ -302,8 +343,6 @@ nav .navlinks li a {
   }
 }
 
-
-
 @media (max-width: 800px) {
   .column {
     flex: 50%;
@@ -333,7 +372,7 @@ nav .navlinks li a {
   @media (max-width: 600px) {
     .column {
       flex: 100%;
-      max-width: 10 0%;
+      max-width: 100%;
     }
   }
 }
